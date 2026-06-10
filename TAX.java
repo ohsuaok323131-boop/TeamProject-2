@@ -5,7 +5,7 @@
  * @author (작성자 이름)
  * @version (버전 번호나 날짜)
  */
-public interface Tax
+public interface TAX
 {
     /**
      * 상품의 세금액을 계산하여 반환

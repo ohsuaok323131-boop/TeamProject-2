@@ -31,15 +31,15 @@ public class Sale
     /**
      * 상품을 판매목록에 추가
      *
-     * @param  name(상품명), tax(상품세금),price(상품가격),qty(상품수량)
+     * @param  name(상품명),qty(상품수량),price(상품가격),tax(상품세금)
      */
-    public void addItem(String name,int tax, int price, int qty)
+    public void addItem(String name, int price, int tax, int qty)
     {
         this.itemNames[itemCount]=name;
         this.itemPrices[itemCount]=price;
         this.itemTaxes[itemCount]=tax;
         this.quantities[itemCount]=qty;
-        itemCount=0;
+        itemCount++;
         totalPrice+=price*qty;
     }
 
@@ -97,7 +97,7 @@ public class Sale
         System.out.println("총합계(상품+세금) : "+getTotalWithTax()+"원");
         
         for(int i=0; i<itemCount;i++){
-            System.out.println("품명 : "+itemNames);
+            System.out.println("품명 : "+itemNames[i]);
             System.out.println("수량 : "+quantities[i]);
             System.out.println("세금 : "+(itemTaxes[i]*quantities[i])+"원");
             System.out.println("금액 : "+(itemPrices[i]*quantities[i])+"원");
