@@ -116,6 +116,7 @@ public class POST
             return;
         }
         Products p = productDB[index];
+        TAX t=(TAX) p;
         p.showInfo();
         currentSale.addItem(p.getName(), p.getPrice(), p.calcTax(), qty);
     }
