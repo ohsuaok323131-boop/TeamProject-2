@@ -1,6 +1,7 @@
 
 /**
- * AlcoholicDrinks 클래스의 설명을 작성하세요.
+ * AlcoholicDrinks 주류 상품을 나타내는 클래스, Products를 상속받고 TAX 인터페이스 구현
+ * 세율(40%) : 주류세(30%) + 부가세(10%)
  *
  * @author (작성자 이름)
  * @version (버전 번호 또는 작성한 날짜)
