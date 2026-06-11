@@ -16,7 +16,7 @@ public class Beverages extends Products implements TAX
      */
     public Beverages(String name, int price){
         super(name, price);
-        this.taxRate = 0.10;
+        this.taxRate = 0.10; //부가세(10%)
     }
     
     /**
