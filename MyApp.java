@@ -15,6 +15,7 @@ public class MyApp
         POST post = new POST();
 
         post.startNewSale();
+        post.showProductList();
         System.out.println("판매를 시작합니다.");
         System.out.println("바코드를 입력하세요.(종료 q)");
 

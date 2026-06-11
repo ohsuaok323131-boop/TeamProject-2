@@ -92,7 +92,7 @@ public class POST
         dbSize = 52;
 
         for(int i = 0; i < dbSize; i++){
-            barcodeDB[i] = String.valueOf(1001 + i);
+            barcodeDB[i] = ""+(1001+i);
         }
     }
 
@@ -171,5 +171,14 @@ public class POST
     public int getCurrentTotal()
     {
         return currentSale.getTotalWithTax();
+    }
+    
+    public void showProductList(){
+        System.out.println("============상품목록=============");
+        for(int i=0;i<dbSize;i++){
+            System.out.println("바코드 : "+barcodeDB[i]+"/"
+            +productDB[i].getName()+"/"+productDB[i].getPrice()+"원");
+        }
+        System.out.println("===============================");
     }
 }
